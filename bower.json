@@ -1,0 +1,24 @@
+{
+  "name": "midas_remodeling",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "peb7268 <peb7268@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "jquery.scrollTo": "~2.1.2",
+    "isotope": "~2.2.2"
+  }
+}

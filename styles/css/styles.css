@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(partials/fonts.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+h2, h3, h4 {
+  font-weight: bold; }
+
+h2 {
+  font-size: 14pt; }
+
+a {
+  text-decoration: none; }
+
+.wrapper p {
+  line-height: 1.2; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.backToTop {
+  opacity: 0;
+  position: fixed;
+  right: 0.5%;
+  bottom: 1%;
+  font-size: 24pt;
+  color: #000;
+  transition: opacity 1s 1s; }
+  .backToTop.active {
+    opacity: 1; }
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto; }
+
+#header {
+  width: 100%;
+  float: left;
+  margin: 0 0 15px; }
+  #header > .wrapper {
+    margin: 15px auto 0; }
+  #header #logo {
+    float: left;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24pt;
+    width: 265px;
+    color: #D8C80C; }
+    #header #logo p, #header #logo span {
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #000;
+      text-shadow: none; }
+    #header #logo p {
+      font-size: 18px; }
+  #header #nav {
+    float: right;
+    margin-top: 23px; }
+    #header #nav li {
+      float: left;
+      margin: 0 5px 0 0; }
+      #header #nav li a {
+        text-decoration: none;
+        background: #000;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 4px 7px; }
+        #header #nav li a:hover, #header #nav li a.active {
+          background: #D8C80C;
+          color: #000; }
+
+.wrapper#bodyContent {
+  overflow: hidden;
+  margin: 25px auto; }
+
+#cta-grid {
+  overflow: hidden;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #000;
+  margin-bottom: 15px; }
+  #cta-grid li {
+    float: left;
+    width: 49.4%;
+    max-height: 350px;
+    margin: 0 5px 5px 0;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #333; }
+    #cta-grid li img {
+      width: 100%;
+      -webkit-filter: grayscale(1);
+      /* Webkit */
+      filter: gray;
+      /* IE6-9 */
+      filter: grayscale(1);
+      /* W3C */
+      transition-property: -webkit-filter;
+      transition-duration: 550ms;
+      transition-timing-function: ease; }
+      #cta-grid li img:hover {
+        cursor: pointer;
+        -webkit-filter: grayscale(0); }
+    #cta-grid li h2 {
+      position: absolute;
+      z-index: 10;
+      font-size: 24pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #FFEB00;
+      text-shadow: 1px 1px 1px #777; }
+    #cta-grid li.first h2 {
+      left: 5px;
+      top: 5px; }
+    #cta-grid li.second h2 {
+      right: 5px;
+      top: 5px; }
+    #cta-grid li.third h2 {
+      left: 5px;
+      bottom: 5px; }
+    #cta-grid li.fourth h2 {
+      bottom: 5px;
+      right: 5px; }
+
+.homeContent {
+  width: 87%;
+  margin: 0 auto; }
+  .homeContent > div {
+    margin-bottom: 25px;
+    padding: 10px 3% 25px; }
+    .homeContent > div h2 {
+      margin: 0 0 2px; }
+    .homeContent > div p {
+      font-weight: normal;
+      font-size: 14pt; }
+    .homeContent > div.highlight {
+      background: #FFEB00;
+      transition: background-color 3s 300ms ease; }
+      .homeContent > div.highlight.removeHighlight {
+        background: transparent;
+        transition: background-color 1s 250ms ease; }
+    .homeContent > div .seeMore {
+      display: block;
+      color: #000;
+      background: #FFEB00;
+      float: right;
+      font-weight: bold;
+      margin: 0 1% 0 0;
+      padding: 4px 25px 4px 4px;
+      position: relative; }
+      .homeContent > div .seeMore i {
+        position: absolute;
+        right: 5px;
+        top: 5px; }
