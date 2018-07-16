@@ -86,15 +86,16 @@ a {
 #header {
   width: 100%;
   float: left;
-  margin: 0 0 15px; }
+  margin: 15px 0 15px; }
   #header > .wrapper {
     margin: 15px auto 0; }
   #header #logo {
     float: left;
     font-family: 'Permanent Marker', cursive;
     font-size: 24pt;
-    width: 265px;
-    color: #D8C80C; }
+    max-width: 575px;
+    width: 60%;
+    color: #0447b2; }
     #header #logo p, #header #logo span {
       font-family: 'Open Sans Condensed', sans-serif;
       color: #000;
@@ -115,7 +116,7 @@ a {
         text-transform: uppercase;
         padding: 4px 7px; }
         #header #nav li a:hover, #header #nav li a.active {
-          background: #D8C80C;
+          background: #0447b2;
           color: #000; }
 
 .wrapper#bodyContent {
@@ -137,11 +138,9 @@ a {
     border: 1px solid #333; }
     #cta-grid li img {
       width: 100%;
-      -webkit-filter: grayscale(1);
+      -webkit-filter: blur(3px) grayscale(1);
       /* Webkit */
-      filter: gray;
-      /* IE6-9 */
-      filter: grayscale(1);
+      filter: blur(3px) grayscale(1);
       /* W3C */
       transition-property: -webkit-filter;
       transition-duration: 550ms;
@@ -155,7 +154,7 @@ a {
       font-size: 24pt;
       font-weight: bold;
       text-transform: uppercase;
-      color: #FFEB00;
+      color: #0449b7;
       text-shadow: 1px 1px 1px #777; }
     #cta-grid li.first h2 {
       left: 5px;
@@ -182,21 +181,66 @@ a {
       font-weight: normal;
       font-size: 14pt; }
     .homeContent > div.highlight {
-      background: #FFEB00;
+      background: #0449b7;
       transition: background-color 3s 300ms ease; }
       .homeContent > div.highlight.removeHighlight {
         background: transparent;
         transition: background-color 1s 250ms ease; }
     .homeContent > div .seeMore {
       display: block;
-      color: #000;
-      background: #FFEB00;
+      color: #fff;
+      background: #0449b7;
       float: right;
       font-weight: bold;
       margin: 0 1% 0 0;
-      padding: 4px 25px 4px 4px;
+      padding: 7px 25px 7px 14px;
       position: relative; }
       .homeContent > div .seeMore i {
         position: absolute;
         right: 5px;
-        top: 5px; }
+        top: 9px; }
+
+.banner {
+  background: #333;
+  min-height: 275px;
+  margin: 0 0 25px; }
+
+.content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  .content h1, .content h2, .content h3, .content h4 {
+    font-weight: bold; }
+  .content h1 {
+    font-size: 20pt;
+    margin: 0 0 10px; }
+  .content .right {
+    width: 88%; }
+  .content .left {
+    width: 10%;
+    margin-right: 1%; }
+    .content .left ul.side-nav li a {
+      color: #333;
+      display: block;
+      padding: 4px 7px;
+      box-sizing: border-box; }
+    .content .left ul.side-nav li.active a {
+      background: #0449b7;
+      font-weight: bold; }
+  .content .photos {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px dotted #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 1; }
+    .content .photos img {
+      width: 150px;
+      height: 150px;
+      background: #333;
+      display: block; }

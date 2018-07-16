@@ -58,6 +58,6 @@ function scrollToContent(evt){
 	$(document).ready(function(){
 		addCtaClasses();
 		bindEvents();
-		$('#cta-grid').isotope();
+		//$('#cta-grid').isotope();
 	});
 }(jQuery));

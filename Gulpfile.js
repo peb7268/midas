@@ -54,12 +54,11 @@ gulp.task('scripts:watch', function () {
 
 gulp.task('serve', ['sass'], function(){
   browserSync.init({
-        server: "./"
-        //proxy: 'http://timsautoupholstery.com'
-    });
+    server: './'
+  });
 
     gulp.watch(paths.sass, ['sass']);
-    gulp.watch(['./*.php', paths.sass, paths.scripts]).on('change', browserSync.reload);
+    gulp.watch(['./*.html', paths.sass, paths.scripts]).on('change', browserSync.reload);
 });
 
 gulp.task('build',   ['sass', 'browserify', 'images']);
