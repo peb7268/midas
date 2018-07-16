@@ -4,26 +4,27 @@ var express     	= require('express');
 var bodyParser 		= require('body-parser');
 var path        	= require('path');
 var app         	= express();
-var mandrill 		= require('mandrill-api/mandrill');
-var process 		= require('process');
-var qs 				= require('querystring');
+var mandrill 		  = require('mandrill-api/mandrill');
+var process 		  = require('process');
+var qs 				    = require('querystring');
 
 //Middleware Configs
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname));
 app.use('/scripts', express.static(__dirname + '/node_modules'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //If you want to use view engines
-app.set('views', __dirname + '/public/views');
+app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 
 //Routes
 app.get('/', (req, res) => res.render('index', {active_page: 'home'}));
 app.get('/about', (req, res) => res.render('about', {active_page: 'about'}));
 app.get('/services', (req, res) => res.render('services', {active_page: 'services'}));
-app.get('/contact', (req, res) => res.render('contact', {active_page: 'contact'}));
+app.get('/work', (req, res) => res.render('work', {active_page: 'work'}));
+//app.get('/contact', (req, res) => res.render('contact', {active_page: 'contact'}));
 //app.get('/about', (req, res) => res.render('about', {message: 'Great and nerdy things coming... stay tuned.', title: 'this is how you pass data from express to your views.', active_page: 'about-page'}));
 
 app.post('/contact', (req, res)=>{

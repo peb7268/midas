@@ -1,0 +1,22 @@
+//- about.pug
+extends layout.pug
+
+block styles
+        link(rel="stylesheet", href="/styles/css/styles.css")
+
+block content
+    .content-wrapper
+        .wrapper
+            .banner
+            h2.title About Us
+            p 
+                | Prime Painters LLC is a Georgia based painting company with over 15 years of professional experience. 
+                | We can handle all of your residential, commercial, and industrial painting needs on time and within budget.
+                | All of our painters are in house, so you can assure that timeliness and availability is never an issue!
+                | We only use the highest quality paints and materials to complete your painting job. Your satisfaction is our number one priority. We provide prompt and courteous service.
+                | Prime Painters LLC will treat your home as if it were our own: with the utmost care and respect.
+
+    block bodyscripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="scripts/jquery.scrollto/jquery.scrollTo.js")
+    script(src='/js/global.js')

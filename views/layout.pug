@@ -1,0 +1,35 @@
+//- layout.pug
+html(lang="en")
+  head
+    title Capone
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="keywords", content="Chicago decks, pergolas, covered porches")
+
+    block scripts
+        script(src="https://use.fontawesome.com/8e07ad6cf8.js")
+        script(src="./js/modernizr.js")
+        script(defer, src="https://use.fontawesome.com/releases/v5.0.8/js/all.js")
+    block styles
+        link(rel="stylesheet", href="/styles/css/styles.css")
+        //link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+    body.page(class=active_page)
+      #header
+        .wrapper.clearfix
+          h1#logo
+            | Badelita custom homes
+            span   | and remodeling
+            p Turning your homes hidden equity into gold
+
+          include nav.pug
+
+    block content
+
+    block bodyscripts
+        script(src='./scripts/rxjs/bundles/Rx.js')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src='/js/main.js')
+
+    block footer
+        footer#footer
+            p &copy; 2018, Badelita Custom Homes &amp; Remodeling, All Rights Reserved
