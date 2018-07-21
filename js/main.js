@@ -34,7 +34,7 @@ function scrollToTop(evt){
 }
 
 function scrollToContent(evt){
-	evt.preventDefault();
+  evt.preventDefault();
 	var dest = $(evt.currentTarget).data('dest');
 
 	$('.highlight').removeClass('highlight');
@@ -82,7 +82,7 @@ function loadGalleryImages(selector){
 (function($){
 	$(document).ready(function(){
 		addCtaClasses();
-		bindEvents();
+    bindEvents();
 		//$('#cta-grid').isotope();
 	});
 }(jQuery));

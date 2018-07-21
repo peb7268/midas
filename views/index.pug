@@ -7,24 +7,24 @@ block styles
 block content
   #bodyContent.wrapper
     ul#cta-grid
-      li(data-dest='#service1')
+      li(data-dest='#kitchens')
         h2 Kitchens
         img(src="./img/908770540.jpg")
 
-      li(data-dest='#service2')
+      li(data-dest='#bathrooms')
         h2 Bathrooms
         img(src="./img/800583112.jpg")
 
-      li(data-dest='#service4')
+      li(data-dest='#flooring')
         h2 Flooring
         img(src="./img/898297574.jpg")
 
-      li(data-dest='#service3')
+      li(data-dest='#basements')
         h2 Basements
         img(src="./img/510871561.jpg")
 
     .homeContent
-      #service1
+      #kitchens
         h2 Kitchens
         p Probably the most used room in most homes a kitchen is a focal point of any home. Besides being used to cook most of the time a family will spend their time together here.
         <br> As such it not only should be aesthetically pleasing but also practical.
@@ -32,31 +32,26 @@ block content
           | See More
           i.fa.fa-chevron-circle-right
 
-      #service2
+      #flooring
         h2 Flooring
         p Floors give the house character. Whether you are looking for a rustic floor or a more modern looks and quality floor is needed to bring the whole room together.
         a.seeMore(href="#")
-          See More
+          | See More
           i.fa.fa-chevron-circle-right
-      #service3
+      #bathrooms
         h2 Bathrooms
         p Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor.
         a.seeMore(href="#")
-          See More
+          | See More
           i.fa.fa-chevron-circle-right
-      #service4
+      #basements
         h2 Basements
         p The  basement doesn't need to be an area for clutter but A bonus space a basement can be a blank slate for a home. <br>
           | It can be transformed into a play area for the kids, man cave, home theater or a separate area to rent out for extra income
-        a(href="#")
-          See More
+        a.seeMore(href="#")
+          | See More
           i.fa.fa-chevron-circle-right
 
     a.backToTop(href="#")
       i.fa.fa-chevron-circle-up
     #footer
-
-  block bodyscripts
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-  script(src="scripts/jquery.scrollto/jquery.scrollTo.js")
-  script(src='/js/global.js')

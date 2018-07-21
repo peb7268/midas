@@ -128,10 +128,15 @@ body > .wrapper {
   overflow: hidden;
   padding-bottom: 15px;
   border-bottom: 5px solid #000;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-wrap: wrap; }
   #cta-grid li {
     float: left;
     width: 49.4%;
+    height: 100%;
     max-height: 350px;
     margin: 0 5px 5px 0;
     overflow: hidden;
@@ -139,6 +144,7 @@ body > .wrapper {
     border: 1px solid #333; }
     #cta-grid li img {
       width: 100%;
+      height: 100%;
       -webkit-filter: blur(3px) grayscale(1);
       /* Webkit */
       filter: blur(3px) grayscale(1);
@@ -183,7 +189,8 @@ body > .wrapper {
       font-size: 14pt; }
     .homeContent > div.highlight {
       background: #0449b7;
-      transition: background-color 3s 300ms ease; }
+      transition: background-color 3s 300ms ease;
+      min-height: 115px; }
       .homeContent > div.highlight.removeHighlight {
         background: transparent;
         transition: background-color 1s 250ms ease; }
@@ -194,12 +201,12 @@ body > .wrapper {
       float: right;
       font-weight: bold;
       margin: 0 1% 0 0;
-      padding: 7px 25px 7px 14px;
+      padding: 7px 35px 7px 14px;
       position: relative; }
-      .homeContent > div .seeMore i {
+      .homeContent > div .seeMore svg {
         position: absolute;
-        right: 5px;
-        top: 9px; }
+        right: 10px;
+        top: 7px; }
 
 .banner {
   background: #333;
