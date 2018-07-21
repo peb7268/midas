@@ -15,7 +15,13 @@ body {
 h2, h3, h4 { font-weight: bold; }
 h2 { font-size: 14pt; }
 a { text-decoration: none; }
-.wrapper p { line-height: 1.2; }
+
+body > {
+  .wrapper {
+    min-height: 400px;
+    p { line-height: 1.2; }
+  }
+}
 
 .clearfix:after {
   content: "";
@@ -31,19 +37,18 @@ a { text-decoration: none; }
 	font-size: 24pt;
 	color: #000;
 	transition: opacity 1s 1s;
-	&.active { 
+	&.active {
 		opacity: 1;
 	}
 }
 
 .wrapper {
 	width: 95%;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 #header {
 	width: 100%;
-	float: left;
 	margin: 15px 0 15px;
 	& > .wrapper { margin: 15px auto 0; }
 
@@ -60,7 +65,7 @@ a { text-decoration: none; }
 	}
 	#nav {
 		float: right;
-		margin-top: 23px; 
+		margin-top: 23px;
 
 		li {
 			float: left;
@@ -81,7 +86,6 @@ a { text-decoration: none; }
 	}
 }
 
-
 .wrapper#bodyContent {
 	overflow: hidden;
 	margin: 25px auto;
@@ -91,7 +95,7 @@ a { text-decoration: none; }
 	overflow: hidden;
 	padding-bottom: 15px;
 	border-bottom: 5px solid #000;
-	margin-bottom: 15px; 
+	margin-bottom: 15px;
 
 	li {
 		float: left;
@@ -102,7 +106,7 @@ a { text-decoration: none; }
 		position: relative;
 		border: 1px solid #333;
 
-		img { 
+		img {
 			width: 100%;
 			-webkit-filter: blur(3px) grayscale(1); /* Webkit */
 			filter: blur(3px) grayscale(1); /* W3C */
@@ -131,15 +135,15 @@ a { text-decoration: none; }
 		}
 		&.second h2{
 			right: 5px;
-			top: 5px;	
+			top: 5px;
 		}
 		&.third h2{
 			left: 5px;
-			bottom: 5px;	
+			bottom: 5px;
 		}
 		&.fourth h2{
 			bottom: 5px;
-			right: 5px;	
+			right: 5px;
 		}
 	}
 }
@@ -154,9 +158,9 @@ a { text-decoration: none; }
 		h2 {
 			margin: 0 0 2px;
 		}
-		p { 
+		p {
 			font-weight: normal;
-			font-size: 14pt; 
+			font-size: 14pt;
 		}
 		&.highlight {
 			background: $primary;
@@ -180,7 +184,7 @@ a { text-decoration: none; }
 				right: 5px;
 				top: 9px;
 			}
-		}	
+		}
 	}
 }
 
@@ -199,7 +203,7 @@ a { text-decoration: none; }
 	h1, h2, h3, h4 {
 		font-weight: bold;
 	}
-	h1 { 
+	h1 {
 		font-size: 20pt;
 		margin: 0 0 10px;
 	}
@@ -245,4 +249,43 @@ a { text-decoration: none; }
 			display: block;
 		}
 	}
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0 2%;
+}
+
+//Gallery
+.gallery-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: 0 auto;
+
+    li {
+      display: flex;
+      a {
+        background: $primary;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    }
+}
+
+.galleries {
+  .gallery{
+    display: none;
+    &:fist-child { display: block; }
+    img {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    img[data-src] {
+      opacity: 0;
+    }
+  }
 }
