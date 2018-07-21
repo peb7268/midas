@@ -262,7 +262,7 @@ body > {
     display: flex;
     justify-content: space-between;
     width: 400px;
-    margin: 0 auto;
+    margin: 25px auto;
 
     li {
       display: flex;
@@ -281,7 +281,11 @@ body > {
     &:fist-child { display: block; }
     img {
       opacity: 1;
-      transition: opacity 0.3s;
+      transition: opacity 500ms ease-in;
+      display: flex;
+      align-items: center;
+      max-width: 700px;
+      margin: 0 auto 25px;
     }
 
     img[data-src] {

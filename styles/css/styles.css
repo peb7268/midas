@@ -255,7 +255,7 @@ body > .wrapper {
   display: flex;
   justify-content: space-between;
   width: 400px;
-  margin: 0 auto; }
+  margin: 25px auto; }
   .gallery-nav li {
     display: flex; }
     .gallery-nav li a {
@@ -270,6 +270,10 @@ body > .wrapper {
     display: block; }
   .galleries .gallery img {
     opacity: 1;
-    transition: opacity 0.3s; }
+    transition: opacity 500ms ease-in;
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto 25px; }
   .galleries .gallery img[data-src] {
     opacity: 0; }
