@@ -258,6 +258,15 @@ body > .wrapper {
   bottom: 0;
   padding: 0 2%; }
 
+.services {
+  margin: 0 0 100px; }
+  .services .service {
+    margin: 0 0 25px; }
+    .services .service > h2 {
+      margin-bottom: 10px; }
+    .services .service p {
+      margin: 0 0 7px; }
+
 .gallery-nav {
   display: flex;
   justify-content: space-between;

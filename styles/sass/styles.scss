@@ -265,6 +265,19 @@ body > {
   padding: 0 2%;
 }
 
+//Services
+.services {
+  margin: 0 0 100px;
+  .service {
+    margin: 0 0 25px;
+    & > h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0 0 7px;
+    }
+  }
+}
 //Gallery
 .gallery-nav {
     display: flex;
