@@ -254,9 +254,12 @@ body > .wrapper {
       display: block; }
 
 #footer {
+  background: #fff;
   position: fixed;
   bottom: 0;
-  padding: 0 2%; }
+  padding: 0 2%;
+  z-index: 10;
+  width: 100%; }
 
 .services {
   margin: 0 0 100px; }

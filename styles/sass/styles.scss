@@ -260,9 +260,12 @@ body > {
 }
 
 #footer {
+  background: #fff;
   position: fixed;
   bottom: 0;
   padding: 0 2%;
+  z-index: 10;
+  width: 100%;
 }
 
 //Services
