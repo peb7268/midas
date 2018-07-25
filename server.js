@@ -11,6 +11,7 @@ var qs 				    = require('querystring');
 //Middleware Configs
 app.use(express.static(__dirname));
 app.use('/scripts', express.static(__dirname + '/node_modules'));
+app.use('/vendors', express.static(__dirname + '/js/vendors'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.urlencoded({ extended: true }));
