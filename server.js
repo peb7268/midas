@@ -9,15 +9,14 @@ var process 		  = require('process');
 var qs 				    = require('querystring');
 
 //Middleware Configs
-app.use(express.static(__dirname));
+app.use(express.static('public'));
 app.use('/scripts', express.static(__dirname + '/node_modules'));
-app.use('/vendors', express.static(__dirname + '/js/vendors'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //If you want to use view engines
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/public/views');
 app.set('view engine', 'pug');
 
 //Routes
