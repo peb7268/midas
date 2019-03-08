@@ -24,6 +24,14 @@ function bindEvents(){
   $('.gallery-nav a').on('click', toggleGallery);
 }
 
+function showGallery(loc){
+	const sel = `.gallery-nav li a[href="${loc.hash}"]`;
+	console.log('sel: ', sel);
+
+	$(sel).click();
+	history.pushState("", document.title, window.location.pathname + window.location.search);
+}
+
 function scrollToTop(evt){
 	evt.preventDefault();
 
@@ -83,6 +91,7 @@ function loadGalleryImages(selector){
 	$(document).ready(function(){
 		addCtaClasses();
     bindEvents();
-		//$('#cta-grid').isotope();
+		showGallery(window.location);
+
 	});
 }(jQuery));

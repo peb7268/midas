@@ -13,10 +13,10 @@ var notify 		  = require("gulp-notify");
 
 
 var paths = {
-  scripts: 	['./js/**/*.js'],
-  images: 	'./img/**/*.{gif,jpg,png,svg}',
-  sass: 	'./styles/sass/**/*.scss',
-  css: 		'./styles/css/'
+  scripts: 	['./public/js/**/*.js'],
+  images: 	'./public/img/**/*.{gif,jpg,png,svg}',
+  sass: 	'./public/styles/sass/**/*.scss',
+  css: 		'./public/styles/css/'
 };
 
 // Copy all static images 
